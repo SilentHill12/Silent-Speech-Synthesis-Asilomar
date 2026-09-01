@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Speech decoded from neck-and-ear muscle activity while the speaker mouthed each sentence silently. UC Berkeley, Asilomar 2026.">
+<meta name="description" content="Audio demo: speech decoded from neck-and-ear muscle activity while the speaker mouthed each sentence silently. UC Berkeley, Asilomar Bioelectronics Symposium 2026.">
 <meta name="theme-color" content="#003062">
-<title>Speech From Silent EMG</title>
+<title>A Non-Invasive End-to-End Silent Speech Neuroprosthetic Using Neck and Ear Wearables</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600&display=swap">
 </head>
 <body>
@@ -72,8 +72,8 @@ header { display: flex; flex-direction: column; gap: .7rem; margin-bottom: 2rem;
 }
 h1 {
   font-family: "IBM Plex Sans Condensed", "IBM Plex Sans", sans-serif;
-  font-weight: 600; font-size: clamp(1.9rem, 7.5vw, 2.5rem);
-  line-height: 1.08; letter-spacing: -.012em; margin: 0; text-wrap: balance;
+  font-weight: 600; font-size: clamp(1.42rem, 5.4vw, 1.85rem);
+  line-height: 1.16; letter-spacing: -.008em; margin: 0; text-wrap: balance;
 }
 .lede { margin: 0; color: var(--ink-2); font-size: 1.02rem; max-width: 32ch; }
 .note {
@@ -146,6 +146,11 @@ h1 {
   * { animation: none !important; transition: none !important; }
 }
 
+.more { margin-top: 1.6rem; padding: .9rem 1rem; border: 1px dashed var(--line);
+  border-radius: 10px; font-size: .95rem; }
+.more a { color: var(--accent); font-weight: 500; text-decoration: none; }
+.more a:hover { text-decoration: underline; }
+.more span { color: var(--ink-3); font-size: .84rem; }
 footer {
   margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--line);
   font-size: .8rem; color: var(--ink-3);
@@ -156,7 +161,7 @@ footer {
 <div class="wrap">
   <header>
     <span class="eyebrow">UC Berkeley &middot; Asilomar 2026</span>
-    <h1>No voice. No sound. Still speech.</h1>
+    <h1>A Non-Invasive End-to-End Silent Speech Neuroprosthetic Using Neck and Ear Wearables</h1>
     <p class="lede">Each sentence below was decoded from neck-and-ear muscle
       activity while the speaker mouthed it silently.</p>
     <p class="note"><span>&#9835;</span><span>Best with headphones &mdash; the room is loud.</span></p>
@@ -280,6 +285,8 @@ footer {
         <div class="track" data-for="wed-1108-2017-voiced"><i></i></div>
       </article>
     </section>
+  <p class="more"><a href="./extra.html">More recent results &rarr;</a><br>
+    <span>Open-vocabulary sentences, code required &mdash; ask me at the poster.</span></p>
   <footer>
     <span>Silent speech neuroprosthetic &middot; sEMG &rarr; articulation &rarr; speech</span>
     <span>Clips are model output, not recordings of the speaker&rsquo;s voice.</span>
